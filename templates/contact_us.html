@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<head>
+
+    <link id="theme" type="text/css" rel="stylesheet" href="/static/default.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Contact Us</title>
+
+</head>
+
+
+<body>
+
+    <div class="nav_menu"> <!--This is the navigation bar with all website links-->
+
+        <a href="/" class="nav_link" style="left: 5%">Home</a>
+
+        <a href="/about_me" class="nav_link" style="left: 15%">About Me</a>
+
+        <a href="/portfolio" class="nav_link" style="left: 25%">Portfolio</a>
+        
+        <a href="/contact_us" class="nav_link" style="left:35%">Contact Us</a>
+
+    </div>
+
+
+    <div class="contact_box"> <!--This is a contact form-->
+
+        <h1>Get In Touch<br> </h1>
+
+        <form action="/contact_us" method="post">
+
+            <p style="left:2vw; top:5vw; position: absolute;">FIRST NAME</p><input type="text" name="fname" placeholder="Please enter first name..." autofocus autocomplete="off" required class="contact_input_left">
+            <p style="right:8vw; top:5vw; position: absolute;">LAST NAME</p><input type="text" name="lname" placeholder="Please enter last name..." autofocus autocomplete="off" required class="contact_input_right"><p><br> </p>
+
+            <p style="left:2vw; top:14vw; position: absolute;">EMAIL</p><input type="email" name="address" placeholder="Please enter email..." autofocus autocomplete="off" required class="contact_input_left" style="top:17vw;">
+            <p style="right:8vw; top:14vw; position: absolute;">PHONE NUMBER</p><input type="tel" name="number" placeholder="Please enter phone number..." autofocus autocomplete="off" required class="contact_input_right" style="top:17vw;"><p><br> </p>
+
+
+            <p style="bottom:15vw; position: absolute; left:10vw;">What Do You Have In Mind</p><textarea class="contact_query" placeholder="Please enter query" required name="query"></textarea>
+
+            <button type="submit" class="contact_btn">Submit</button>
+
+        </form>
+
+    </div>
+
+
+
+
+
+</body>

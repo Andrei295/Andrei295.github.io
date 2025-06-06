@@ -1,0 +1,197 @@
+/*This is for general use*/
+body {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    font-family: Arial;
+    font-size: 1vw;
+}
+
+.nav_menu {
+    width: 85vw;
+    height: 4.2vw;
+    top:2.5vw;
+    position:fixed;
+    background-color: black;
+    z-index: 100;
+    border-radius: 0.7vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.nav_link {
+    top:1.5vw;
+    position:absolute;
+    color:#ffffff;
+    font-weight: bold;
+    font-size: 1.2vw;
+    text-decoration: none;
+    border: 0.05vw, #000000, solid;
+    background-color: #000000;
+}
+
+
+.nav_link:hover {
+    top:1.5vw;
+    position:absolute;
+    color:#ffffff;
+    font-weight: bold;
+    font-size: 1.2vw;
+    text-decoration: none;
+    border: 0.05vw, #000000, solid;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+
+
+/*This is used on the About Me page*/
+.about_me_main{
+    color:black;
+    top:10vw;
+    left:10vw;
+    position: absolute;
+    font-size: 1.2vw;
+}
+
+
+.about_me_img{
+    max-width: 100vw;
+    min-height: 25vw;
+    border-radius: 0.5vw;
+    position: absolute;
+    bottom:2vw;
+    left:10vw;
+}
+
+.sections{
+    color:black;
+    right:10vw;
+    position: absolute;
+    font-size: 1.2vw;
+}
+
+
+img{
+    right:20vw;
+    position: absolute;
+    max-height: 5vw;
+    border-radius: 0.7vw;
+}
+
+
+/*This is for the Portfolio Page*/
+.left_side{
+    color:black;
+    top:27vw;
+    position: absolute;
+    left:12vw;
+    
+}
+
+
+.briefcase{
+    width: 20vw;
+    min-height: 15vw;
+    left:17vw;
+    top:10vw;
+    position: absolute;
+}
+
+
+/*This is for the contact us page*/
+.contact_box{
+    width: 35vw;
+    height: 40vw;
+    outline-style: solid;
+    outline-color: #000000;
+    border-radius: 0.7vw;
+    top:8vw;
+    left:30vw;
+    position: absolute;
+}
+
+
+.contact_input_left{
+    border-radius: 0.7vw;
+    width: 15vw;
+    height: 2vw;
+    left:2vw;
+    top:8vw;
+    position: absolute;
+}
+
+.contact_input_right{
+    border-radius: 0.7vw;
+    width: 15vw;
+    height: 2vw;
+    right:2vw;
+    top:8vw;
+    position: absolute;
+}
+
+
+
+.contact_query{
+    width: 20vw;
+    height: 10vw;
+    border-radius: 0.7vw;
+    bottom:5vw;
+    position: absolute;
+    left:7.5vw;
+}
+
+
+.contact_btn{
+    background-color: blue;
+    color:#ffffff;
+    font-weight: bold;
+    width: 30vw;
+    height:2vw;
+    border-radius: 0.7vw;
+    bottom:0.7vw;
+    position: absolute;
+    left:2.5vw;
+}
+
+.contact_btn:hover{
+    background-color: blue;
+    color:#ffffff;
+    font-weight: bold;
+    width: 30vw;
+    height:2vw;
+    border-radius: 0.7vw;
+    bottom:0.7vw;
+    position: absolute;
+    left:2.5vw;
+    cursor: pointer;
+}
+
+
+/*This is for the contact confirm page*/
+.contact_note{
+    position: absolute;
+    top: 12vw;
+    left:40vw;
+}
+
+
+.thanks_img{
+    border-radius: 0.5vw;
+    max-width: 70vw;
+    min-height: 20vw;
+    bottom:5vw;
+    left:33vw;
+}
+
+
+/*This is for the Home page*/
+
+.home_img{
+    max-width: 100vw;
+    min-height: 25vw;
+    border-radius: 0.5vw;
+    position: absolute;
+    bottom:5vw;
+    left:27vw;
+}
