@@ -173,7 +173,7 @@ def logout():
 
     session.clear() #This clears all session variables
 
-    return redirect("/")
+    return render_template("/")
 
 
 
