@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+
+    <link id="theme" type="text/css" rel="stylesheet" href="/static/stylesheet.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Log In</title>
+
+</head>
+
+
+<body>
+
+    <div class="nav_menu"> <!--This is the navigation bar with all website links-->
+
+        <a href="/" class="nav_link" style="left: 5%">Home</a>
+
+        <a href="/movies" class="nav_link" style="left: 15%">Movies</a>
+
+        <a href="/details" class="nav_link" style="left: 25%">Details</a>
+
+        <a href="/bookings" class="nav_link" style="left: 35%">Bookings</a>
+
+        <a href="/register" class="nav_link" style="right: 15%">Register</a>
+
+        <a href="/login" class="nav_link" style="right: 5%">Log In</a>
+
+    </div>
+
+
+
+    <form action="/login" method="post" name="login"> <!--This is used to gather data from a user to create a new account-->
+
+        <div class="register_box">
+
+            <div style="position: absolute; top:4vw; right: 15vw;">
+
+                <p>Email:</p><input type="email" name="address" autofocus autocomplete="off" class="login_input" required><br>
+
+                <p>Password:</p><input type="password" name="password" autofocus autocomplete="off" class="login_input" required minlength="8" maxlength="24"><br> <!--Min and Max length allows me to use built in length check validation-->
+
+            </div>
+
+        </div>
+
+
+        <button class="register_btn" type="submit">Log In</button>
+
+
+    </form>
+
+
+
+</body>

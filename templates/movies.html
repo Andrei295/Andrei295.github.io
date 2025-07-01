@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<head>
+
+    <link id="theme" type="text/css" rel="stylesheet" href="/static/stylesheet.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Movies</title>
+
+</head>
+
+
+<body>
+
+{% if ID %}
+
+    <div class="nav_menu"> <!--This is the navigation bar with all website links-->
+
+        <form action="/" method="post">
+            <input type="hidden" value="{{ ID }}" name="ID">
+            <button class="nav_link" type="submit" style="left: 5%">Home</button>
+        </form>
+
+        <form action="/movies" method="post">
+            <input type="hidden" value="{{ ID }}" name="ID">
+            <button class="nav_link" type="submit" style="left: 15%">Movies</button>
+        </form>
+
+        <form action="/details" method="post">
+            <input type="hidden" value="{{ ID }}" name="ID">
+            <button class="nav_link" type="submit" style="left: 25%">Details</button>
+        </form>
+
+        <form action="/bookings" method="post">
+            <input type="hidden" value="{{ ID }}" name="ID">
+            <button class="nav_link" type="submit" style="left: 35%">Bookings</button>
+        </form>
+
+        <form action="/summary" method="post">
+            <input type="hidden" value="{{ ID }}" name="ID">
+            <button class="nav_link" type="submit" style="left: 45%">Summary</button>
+        </form>
+
+        <a href="/logout" class="nav_link" style="right: 5%">Log Out</a>
+
+    </div>
+
+{% else %}
+
+    <div class="nav_menu"> <!--This is the navigation bar with all website links-->
+
+        <a href="/" class="nav_link" style="left: 5%">Home</a>
+
+        <a href="/movies" class="nav_link" style="left: 15%">Movies</a>
+
+        <a href="/details" class="nav_link" style="left: 25%">Details</a>
+
+        <a href="/bookings" class="nav_link" style="left: 35%">Bookings</a>
+
+        <a href="/register" class="nav_link" style="right: 15%">Register</a>
+
+        <a href="/login" class="nav_link" style="right: 5%">Log In</a>
+
+    </div>
+
+{% endif %}
+
+
+    <div class="top_movies">
+
+        <img src="/static/The Shining.png" alt="The Shining" style="position: absolute; left:-35vw">
+
+        <img src="/static/The Lion King.png" alt="The Lion King" style="position: absolute; left:-25vw">
+
+        <img src="/static/Dune.png" alt="Dune" style="position: absolute; left:-15vw">
+
+        <img src="/static/Airplane.png" alt="Airplane" style="position: absolute; left:-5vw">
+
+        <img src="/static/Thing.png" alt="Thing" style="position: absolute; left:5vw">
+
+        <img src="/static/The Rocketeer.png" alt="The Rocketeer" style="position: absolute; left:15vw">
+
+        <img src="/static/Beauty and the Beast.png" alt="Beauty and the Beast" style="position: absolute; left:23vw">
+
+        <img src="/static/Time After Time.png" alt="Time After Time" style="position: absolute; left:35vw">
+
+    </div>
+
+
+    <div class="bottom_movies">
+
+        <img src="/static/Pacific Rim.png" alt="Pacific Rim" style="position: absolute; left:-35vw">
+
+        <img src="/static/Sing.png" alt="Sing" style="position: absolute; left:-25vw">
+
+        <img src="/static/Gravity.png" alt="Gravity" style="position: absolute; left:-15vw">
+
+        <img src="/static/The Hobbit.png" alt="The Hobbit" style="position: absolute; left:-5vw">
+
+        <img src="/static/E.T..png" alt="E.T." style="position: absolute; left:5vw">
+
+        <img src="/static/Candyman.png" alt="Candyman" style="position: absolute; left:15vw">
+
+        <img src="/static/The Green Mile.png" alt="The Green Mile" style="position: absolute; left:25vw">
+
+        <img src="/static/Hot Shots.png" alt="Hot Shots" style="position: absolute; left:35vw">
+
+    </div>
+
+
+</body>

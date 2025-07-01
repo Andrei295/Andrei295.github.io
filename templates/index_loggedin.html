@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<head>
+
+    <link id="theme" type="text/css" rel="stylesheet" href="/static/stylesheet.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Home</title>
+
+</head>
+
+
+<body>
+
+    <div class="nav_menu"> <!--This is the navigation bar with all website links-->
+
+        <form action="/" method="post">
+            <input type="hidden" value="{{ ID }}" name="ID">
+            <button class="nav_link" type="submit" style="left: 5%">Home</button>
+        </form>
+
+        <form action="/movies" method="post">
+            <input type="hidden" value="{{ ID }}" name="ID">
+            <button class="nav_link" type="submit" style="left: 15%">Movies</button>
+        </form>
+
+        <form action="/details" method="post">
+            <input type="hidden" value="{{ ID }}" name="ID">
+            <button class="nav_link" type="submit" style="left: 25%">Details</button>
+        </form>
+
+        <form action="/bookings" method="post">
+            <input type="hidden" value="{{ ID }}" name="ID">
+            <button class="nav_link" type="submit" style="left: 35%">Bookings</button>
+        </form>
+
+        <form action="/summary" method="post">
+            <input type="hidden" value="{{ ID }}" name="ID">
+            <button class="nav_link" type="submit" style="left: 45%">Summary</button>
+        </form>
+
+        <a href="/logout" class="nav_link" style="right: 5%">Log Out</a>
+
+    </div>
+
+
+    <div class="top_content" style="left:15vw; position:absolute">
+
+        <h3>Location:<br> </h3>
+
+        <p>Lower Ninth Street, </p>
+        <p>Central Milton Keynes </p>
+        <p>MK9 3</p>
+
+    </div>
+
+
+    <div class="top_content" style="left:42vw; position:absolute">
+
+        <h3>Experience<br> </h3>
+
+        <p>'The most immersive and </p>
+        <p>exciting film company </p>
+        <p>in the world!'</p>
+
+    </div>
+
+
+    <div class="top_content" style="left:70vw; position:absolute">
+
+        <h3>Events:<br> </h3>
+
+        <p>- Weekend Discounts </p>
+        <p>- Summer Discounts </p>
+        <p>- Celebrity Meetups</p>
+
+    </div>
+
+
+
+    <div class="bottom_content" style="left:15vw; position: absolute;">
+
+        <h3>Popular Movies:</h3>
+
+        <p>- Pacific Rim</p>
+        <p>- Thing</p>
+        <p>- The Lion King</p>
+
+    </div>
+
+
+    <div class="bottom_content" style="left:42vw; position: absolute;">
+
+        <h3>Facilities:</h3>
+
+        <p>- Snack Stations</p>
+        <p>- Fully Immersive Cinema</p>
+        <p>- Kids' Play Area</p>
+
+    </div>
+
+
+
+    <div class="bottom_content" style="left:70vw; position: absolute;">
+
+        <h3>Promotions:</h3>
+
+        <p>- 10% off Popcorn this week</p>
+        <p>- 20% off for a group of 4 or more</p>
+
+    </div>
+
+</body>

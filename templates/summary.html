@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<head>
+
+    <link id="theme" type="text/css" rel="stylesheet" href="/static/stylesheet.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Summary</title>
+
+</head>
+
+
+<body>
+
+    <div class="nav_menu"> <!--This is the navigation bar with all website links-->
+
+        <form action="/" method="post">
+            <input type="hidden" value="{{ ID }}" name="ID">
+            <button class="nav_link" type="submit" style="left: 5%">Home</button>
+        </form>
+
+        <form action="/movies" method="post">
+            <input type="hidden" value="{{ ID }}" name="ID">
+            <button class="nav_link" type="submit" style="left: 15%">Movies</button>
+        </form>
+
+        <form action="/details" method="post">
+            <input type="hidden" value="{{ ID }}" name="ID">
+            <button class="nav_link" type="submit" style="left: 25%">Details</button>
+        </form>
+
+        <form action="/bookings" method="post">
+            <input type="hidden" value="{{ ID }}" name="ID">
+            <button class="nav_link" type="submit" style="left: 35%">Bookings</button>
+        </form>
+
+        <form action="/summary" method="post">
+            <input type="hidden" value="{{ ID }}" name="ID">
+            <button class="nav_link" type="submit" style="left: 45%">Summary</button>
+        </form>
+
+        <a href="/logout" class="nav_link" style="right: 5%">Log Out</a>
+
+    </div>
+
+
+    <div class="summary_box">
+
+        {% if movie %}
+            <h2>Movie:    {{ movie }}</h2>
+
+        {% else %}
+            <h2>Movie:</h2>
+
+        {% endif %}
+
+
+
+        {% if seat %}
+            <h2>Seat:     {{ seat }}</h2>
+
+        {% else %}
+            <h2>Seat:</h2>
+
+        {% endif %}
+
+
+
+        {% if price %}
+            <h2>Total Price ($):    {{ price }}</h2>
+
+        {%else%}
+            <h2>Total Price ($):</h2>
+            
+        {% endif %}
+
+    </div>
+
+</body>
